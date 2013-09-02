@@ -1,12 +1,8 @@
 #!/usr/bin/env ruby
 
-REPO = ARGV[0] || "MONKEY"
-USER = ARGV[1] || "jclosure"
-PASS = ARGV[2] || "xxxxxxxxx"
-
-# REPO = ARGV[0]
-# USER = ARGV[1]
-# PASS = ARGV[2]
+REPO = ARGV[0]
+USER = ARGV[1]
+PASS = ARGV[2]
 
 
 p system('git init')

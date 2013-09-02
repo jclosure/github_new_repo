@@ -9,11 +9,11 @@ USER = sys.argv[2]
 PASS = sys.argv[3]
 
 
-print os.system('git init')
-print os.system('git add .')
-print os.system('git commit -am "initial commit"')
-print os.system("curl -u '{USER}:{PASS}' ".format(**vars()) + "https://api.github.com/user/repos -d {" + "'name':'{REPO}'".format(**vars()) + "}")
-print os.system("git remote add origin git@github.com:{USER}/{REPO}.git".format(**vars()))
-print os.system("git push origin master")
+os.system('git init')
+os.system('git add .')
+os.system('git commit -am "initial commit"')
+os.system("curl -u '{USER}:{PASS}' ".format(**vars()) + "https://api.github.com/user/repos -d {" + "'name':'{REPO}'".format(**vars()) + "}")
+os.system("git remote add origin git@github.com:{USER}/{REPO}.git".format(**vars()))
+os.system("git push origin master")
 
 
